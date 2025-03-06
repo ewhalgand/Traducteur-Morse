@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --background-color: #daf6a1d2;
+    --background-color-variant: #daf6a399;
+    --color-default: #343434;
+    --color-default-variant: #343434da;
+    --color: #c2ed64;
+}
+
+body {
+    height: 100vh;
+    background-color: #fefefe;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+}
+
+h1 {
+    color: var(--color);
+}
+
+.text_content,
+.morse_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 290px;
+}
+
+.content {
+    background-color: var(--background-color);
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: var(--color-default);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.content:hover {
+    background-color: var(--background-color-variant);
+    transform: scale(0.99);
+}
+
+label {
+    color: var(--color-default);
+    font-weight: 600;
+}
+
+input {
+    outline: none;
+    border: 2px solid var(--color-default);
+    padding: 6px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: var(--color-default);
+    color: var(--color);
+    margin-bottom: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button:hover {
+    background-color: var(--color-default-variant);
+}
